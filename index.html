@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Hand Side: Focused Single Variable -->
+        <div class="left-side">
+            <h2>Focused Variable</h2>
+            <div class="dropdown">
+                <label for="variable-select">Choose a variable:</label>
+                <select id="variable-select">
+                    <option value="stock-index">Stock Index</option>
+                    <option value="company-stock">Company Stock</option>
+                    <option value="oil">Oil</option>
+                    <option value="gold">Gold</option>
+                    <option value="exchange-rate">Exchange Rate</option>
+                </select>
+            </div>
+            <div class="chart" id="focused-chart">
+                <!-- Placeholder for chart -->
+            </div>
+            <div class="key-metrics">
+                <p>Current Value: <span id="current-value">-</span></p>
+                <p>Daily Change: <span id="daily-change">-</span></p>
+                <p>Percentage Change: <span id="percentage-change">-</span></p>
+            </div>
+        </div>
+        <!-- Right Hand Side: Multiple Variables -->
+        <div class="right-side">
+            <h2>Market Overview</h2>
+            <div class="multi-line-chart" id="multi-line-chart">
+                <!-- Placeholder for multi-line chart -->
+            </div>
+            <div class="summary-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Current Value</th>
+                            <th>Daily Change</th>
+                            <th>Percentage Change</th>
+                        </tr>
+                    </thead>
+                    <tbody id="summary-table-body">
+                        <!-- Placeholder for summary table rows -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Bottom Section: Latency Monitoring -->
+        <div class="bottom-section">
+            <h2>Latency Monitoring</h2>
+            <div class="latency-charts">
+                <div class="latency-chart" id="computational-latency">
+                    <h3>Computational Latency</h3>
+                    <!-- Placeholder for computational latency chart -->
+                </div>
+                <div class="latency-chart" id="security-latency">
+                    <h3>Security Latency</h3>
+                    <!-- Placeholder for security latency chart -->
+                </div>
+                <div class="latency-chart" id="network-latency">
+                    <h3>Network Latency</h3>
+                    <!-- Placeholder for network latency chart -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
